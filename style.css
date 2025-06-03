@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f8f8fa;
+}
+
+nav {
+    background: #354f52;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #cad2c5;
+}
+
+.hero {
+    background: linear-gradient(rgba(53,79,82,0.7), rgba(53,79,82,0.5)), url('https://placehold.co/1200x500?text=Villamaria+Caldas') center/cover no-repeat;
+    color: #fff;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: #84a98c;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.cta-button:hover {
+    background: #52796f;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about, .contact {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 2rem;
+}
+
+.tours {
+    margin-bottom: 2rem;
+}
+
+.tour-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tour-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(52,79,82,0.09);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact input, .contact textarea {
+    padding: 0.7rem;
+    border: 1px solid #cad2c5;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact button {
+    background: #354f52;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.contact button:hover {
+    background: #52796f;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #cad2c5;
+    color: #354f52;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .tour-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+}
